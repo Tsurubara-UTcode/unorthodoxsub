@@ -1,0 +1,57 @@
+html, body {
+  margin: 0;
+  padding: 10;
+  height: 100%; /* 画面全体を使う */
+  overflow: hidden; /* 画面外にスクロールさせない */
+  
+}
+
+@font-face {
+  font-family: 'Etlangenumber';
+  src: url('/fonts/Etlangenumber-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Etlange';
+  src: url('/fonts/Etlange-Regular.ttf') format('truetype');
+}
+
+.custom-font {
+  font-family: 'Etlangenumber', sans-serif;
+}
+
+.custom-font2 {
+  font-family: 'Etlange', sans-serif;
+}
+
+.header{
+  display: inline;
+  
+}
+
+.choice{
+  display: inline;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.h-screen {
+  height: 100%; /* ビューポート全体を使う */
+}
+
+.timer {
+  font-size: xx-large;
+  color: azure;
+  margin-top: 80pt;
+}
+
+p {
+  color: white;
+  display: inline;
+  margin-top: 10pt;
+}
+
+
+

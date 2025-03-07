@@ -1,0 +1,54 @@
+/* styles.css または App.css などに追加 */
+
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+/* タイマーのカスタムスタイル */
+.timer {
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+}
+
+/* 選択肢枠のスタイル */
+.choice-frame {
+  width: 400px;
+  height: 240px;
+  border: 4px solid transparent;
+}
+
+.choice-frame.selected {
+  border-color: blue;
+}
+
+p {
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+}
+
+@font-face {
+  font-family: 'Etlangenumber';
+  src: url('/Users/keiichiroshibayama/Documents/Projects/how-match/etlange/public/fonts/Etlangenumber-Regular.ttf') format('truetype');
+}
+
+.custom-font {
+  font-family: 'Etlangenumber', sans-serif !important;
+}
+
+
+.yokonarabi2{
+    display:flex;
+    justify-content: center;
+    border: 1px solid #999;
+    background: #f2f2f2;
+}
+.yokonarabi2>div{
+    width:30%;
+}
