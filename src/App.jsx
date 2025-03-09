@@ -168,7 +168,7 @@ export default function QuizGame() {
   };
   
 
-  const questionImage = `/materials/Q${questionNumber}/question.png`;
+  const questionImage = `/materials/Q${questionNumber}/n${questionNumber}p.png`;
   const questionFrameL = "/materials/frame_left.png";
   const questionFrameR = "/materials/frame_right.png";
 
