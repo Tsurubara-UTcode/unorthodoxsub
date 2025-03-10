@@ -24,9 +24,10 @@
 
 .name-inputs input {
   font-size: 2rem;
-  height: 8vh;
-  width: 150px;
+  height: 7vh;
+  width: 300px;
   text-align: center;
+  color: black;
 }
 
 .score-display {
