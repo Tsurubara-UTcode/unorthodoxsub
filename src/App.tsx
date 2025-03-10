@@ -20,13 +20,16 @@ const App = () => {
   return (
     <div className="app-container">
       <div className="name-inputs">
-          <input
-            type="text"
-            value={name}
-            placeholder={"PL"}
-            onChange={(e) => setPlayerNames( e.target.value)}
-          />
-      </div>
+  <input
+    type="text"
+    value={playerNames[0]} // 正しく playerNames[0] を使用
+    placeholder="PL"
+    onChange={(e) => {
+      setPlayerNames([e.target.value, playerNames[1]]); // 配列を適切に更新
+    }}
+  />
+</div>
+
       <div className="score-display">{score} <span className="small-text">pt/400pt</span></div>
       <button type="button" className="reset-button" onClick={handleReset}>リセット</button>
       <div className="button-container">
