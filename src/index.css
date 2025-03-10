@@ -1,57 +1,65 @@
-html, body {
-  margin: 0;
-  padding: 10;
-  height: 100%; /* 画面全体を使う */
-  overflow: hidden; /* 画面外にスクロールさせない */
-  
-}
-
 @font-face {
-  font-family: 'Etlangenumber';
-  src: url('/fonts/Etlangenumber-Regular.ttf') format('truetype');
+  font-family: 'CustomFont';
+  src: url('/fonts/Let_s_go_Digital_Regular.ttf') format('truetype');
 }
 
-@font-face {
-  font-family: 'Etlange';
-  src: url('/fonts/Etlange-Regular.ttf') format('truetype');
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  position: relative;
+  background-color: #f4f4f4;
 }
 
-.custom-font {
-  font-family: 'Etlangenumber', sans-serif;
+.name-inputs {
+  position: absolute;
+  top: 2%;
+  left: 2%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
 
-.custom-font2 {
-  font-family: 'Etlange', sans-serif;
+.name-inputs input {
+  font-size: 2rem;
+  height: 8vh;
+  width: 150px;
+  text-align: center;
 }
 
-.header{
-  display: inline;
-  
+.score-display {
+  font-family: 'CustomFont', sans-serif;
+  font-size: 30vw;
+  font-weight: bold;
+  text-align: center;
+  margin: auto;
 }
 
-.choice{
-  display: inline;
+.reset-button {
+  position: absolute;
+  top: 2%;
+  right: 2%;
+  font-size: 1.2rem;
+  padding: 5px 10px;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  cursor: pointer;
 }
 
-.w-full {
-  width: 100%;
+.button-container {
+  position: absolute;
+  width:100%;
+  bottom: 3%;
+  display: flex;
+  gap: 20px;
 }
 
-.h-screen {
-  height: 100%; /* ビューポート全体を使う */
+.score-button {
+  width: 15%;
+  height: 200px;
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  cursor: pointer;
 }
-
-.timer {
-  font-size: xx-large;
-  color: azure;
-  margin-top: 80pt;
-}
-
-p {
-  color: white;
-  display: inline;
-  margin-top: 10pt;
-}
-
-
-
