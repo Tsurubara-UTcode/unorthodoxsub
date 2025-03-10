@@ -22,6 +22,8 @@ const App = () => {
       <div className="name-inputs">
   <input
     type="text"
+    id="player"
+    name="PL"
     value={playerNames[0]} // 正しく playerNames[0] を使用
     placeholder="PL"
     onChange={(e) => {
