@@ -27,7 +27,7 @@ const App = () => {
             onChange={(e) => setPlayerNames( e.target.value)}
           />
       </div>
-      <div className="score-display">{score} pt</div>
+      <div className="score-display">{score} <span className="small-text">pt/400pt</span></div>
       <button type="button" className="reset-button" onClick={handleReset}>リセット</button>
       <div className="button-container">
         {scoreValues.map((value, index) => (
